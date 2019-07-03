@@ -1,0 +1,14 @@
+.am-tab-bar-bar {
+  position: fixed;
+  box-sizing: border-box;
+  height: 50px;
+  border-top: 1PX solid #ddd;
+  width: 100%;
+  display: flex;
+  transition-duration: .2s;
+  transition-property: height bottom;
+  z-index: 100;
+  justify-content: space-around;
+  align-items: center;
+  bottom: 0;
+}

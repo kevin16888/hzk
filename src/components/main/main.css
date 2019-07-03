@@ -1,0 +1,19 @@
+.am-card-header-content {
+  -webkit-flex: 1;
+  flex: 1 1;
+  text-align: left;
+  color: #000;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+
+  /* 超多一行 只显示一行 */
+  word-break: keep-all;
+  white-space: nowrap;
+  /* position: relative; */
+  overflow: hidden;
+  /* text-overflow: ellipsis; */
+  /* margin-right: 2px; */
+
+}

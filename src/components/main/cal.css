@@ -1,0 +1,40 @@
+.am-segment-item {
+  display: flex;
+  flex: 1 1;
+  justify-content: center;
+  align-items: center;
+  color: #108ee9;
+  font-size: 14px;
+  line-height: 1;
+  transition: background .2s;
+  position: relative;
+  border: 1PX solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+  border-left-width: 0;
+}
+.am-card-header-content {
+  flex: .4 .6;
+  text-align: left;
+  color: #000;
+  display: flex;
+  align-items: center;
+  word-break: keep-all;
+  white-space: nowrap;
+  /* position: relative; */
+  overflow: hidden;
+  /* text-overflow: ellipsis; */
+  /* margin-right: 2px; */
+}
+.am-list-item {
+  position: relative;
+  display: flex;
+  padding-left: 15px;
+  min-height: 44px;
+  background-color: #fff;
+  vertical-align: middle;
+  overflow: hidden;
+  transition: background-color 200ms;
+  align-items: center;
+  border: 1PX solid #ccc;
+}

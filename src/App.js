@@ -1,14 +1,15 @@
-import React from 'react';
-import './App.css';
-import { Button } from 'antd-mobile';
-import 'antd-mobile/dist/antd-mobile.css';
+import React, { Component } from "react";
+import "./App.css";
+import RouterCom from "./router";
 
-function App() {
-  return (
-    <div className="App">
-    <Button>按钮</Button>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <RouterCom />
+      </div>
+    );
+  }
 }
 
 export default App;
