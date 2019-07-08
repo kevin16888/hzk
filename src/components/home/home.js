@@ -16,7 +16,7 @@ class Home extends Component {
       hidden: false
     };
   }
-  renderContent = () => {
+  renderContent = (title) => {
     // console.log(this.state.selectedTab);
     const selectedTab = this.state.selectedTab;
     switch (selectedTab) {
@@ -24,10 +24,10 @@ class Home extends Component {
         return <Main history={this.props.history}  />;
         break;
       case "news":
-        return <News />;
+        return <News title={title}/>;
         break;
       case "chat":
-        return <Chat />;
+        return <Chat title={title} history={this.props.history}/>;
         break;
       case "mine":
         return <Mine />;
@@ -69,7 +69,7 @@ class Home extends Component {
             });
           }}
         >
-          {this.renderContent()}
+          {this.renderContent(item.title)}
         </TabBar.Item>
       )
     });

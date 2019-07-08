@@ -30,14 +30,15 @@ class Login extends Component {
   };
   handleLogin = async () => {
     // console.log(e);
-    const body = this.state;
     const { history } = this.props;
+    const body = this.state;
     const res = await axios.post(`users/login`, body);
     console.log(res);
-    const { meta, data } = res.data;
+    const { meta, data } = res;
     if (meta.status === 200) {
       //保存token
       localStorage.setItem("token", data.token);
+      localStorage.setItem("uid", data.uid);
       //进入home(js代码改标识专业术语叫'编程式导航')
       history.push("/");
     } else {
